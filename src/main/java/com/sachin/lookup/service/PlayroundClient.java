@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(name = "playround", url = "http://localhost:8083")
+@FeignClient(name = "playround", url = "${CLIENT_URL}")
 public interface PlayroundClient {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/sayhello")
