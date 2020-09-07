@@ -20,5 +20,11 @@ public class MainController {
 		
 		return service.getAck();
 	}
+	
+	@GetMapping(value = "test")
+	public String  testme() {
+		
+		return "I AM AVAILABLE!!";
+	}
 
 }
